@@ -1,6 +1,6 @@
 package com.example.gen;
 
-import com.example.FoodType;
+import com.example.gen.FoodType;
 
 public class Dog extends Animal {
 
@@ -13,6 +13,10 @@ public class Dog extends Animal {
     public Dog(String n, int l, FoodType f, String t){
         super(n, l, f, "canis");
         type = t;
+    }
+
+    public Dog(){
+        
     }
 
     String speak(){

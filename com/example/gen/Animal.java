@@ -1,13 +1,11 @@
 package com.example.gen;
 
-import com.example.FoodType;
-
 public class Animal {
     
     String name;
     int legs;
     FoodType ft;
-    final String species;
+    public static String species;
 
     public Animal(String name, int legs, FoodType ft, String s){
         this.name = name;
@@ -20,6 +18,9 @@ public class Animal {
         species = s;
     }
 
+    public Animal(){
+        
+    }
    
     public String toString(){
         return "name:"+name+ ", legs:"+legs+ ", foodtype:"+ ft;
